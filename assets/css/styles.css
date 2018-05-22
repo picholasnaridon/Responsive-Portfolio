@@ -1,0 +1,357 @@
+#content {
+    min-height: 100vh;
+    margin: 0 auto -88px;
+    background: #dddddd
+}
+i { 
+    font-style: italic;
+}
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    color: #4aaaa5;
+    border-bottom: 3px solid #dddddd;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding-bottom: 25px;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom: 4px solid #cccccc;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin-bottom: 40px;
+}
+
+header section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header-title {
+    height: 80px;
+    padding: 0px 30px 0px 30px;
+    float: left;
+    line-height: 80px;
+    background-color: #4aaaa5;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+nav {
+    height: 100%;
+    float: right;
+    display: flex;
+}
+
+
+.nav-btn a {
+    padding: 0px 30px 0px 30px;
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+#portfolio a {
+    display: inline;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+}
+#lower {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+#lower::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#main {
+    width: 700px;
+    padding: 40px 30px 40px 30px;
+    margin-bottom: 50px;
+    background-color: white;
+    margin: 16px 0px 16px 0px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+#aboutMePic {
+    width: 240px;
+    height: 240px;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+
+.port-pic {
+    padding: none;
+    position: relative;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.port-pic img {
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    background-color: #4aaaa5
+}
+textarea {
+    resize: none;
+    width: calc(100% - 20px);
+    font-size: 1em;
+    padding: 5px 5px 5px 15px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 5px 5px 5px 15px;
+    font-size: .8em;
+}
+
+#submit {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    width: auto;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+}
+
+
+
+footer {
+    margin-top: 5%;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    line-height: 80px;
+    color: #CCCCCC;
+    text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    header section {
+        width: 720px;
+        margin: 0 auto;
+    }
+    
+    .nav-btn a {
+        padding: 0px 15px 0px 15px;
+        color: #999999;
+        text-decoration: none;
+    }
+
+    #lower {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    #main {
+        width: 550px;
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 50px;
+        background-color: white;
+        float: left;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777777;
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+    /* For the home page */
+    #profilePic {
+        width: 380px;
+        height: 380px;
+        margin: 0px 0px 20px 0px;
+    }
+    /* For the portfolio page */
+    .port-pic {
+        position: relative;
+        margin-bottom: 40px;
+        cursor: pointer;
+        transition: all .8s ease;
+    }
+
+    .port-pic img {
+        max-width: 100%;
+    }
+    
+    .left {
+        float: none;
+    }
+    
+    .right {
+        float: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    header section {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    .nav-btn a {
+        padding: 0px 5px 0px 5px;
+        color: #999999;
+        text-decoration: none;
+    }
+
+    #lower {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #main {
+        width: 540px;
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 50px;
+        background-color: white;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777777;
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+    
+    #profilePic {
+        width: 240px;
+        height: 240px;
+        float: left;
+        margin: 0px 20px 10px 0px;
+    }
+
+    .port-pic {
+        position: relative;
+        margin-bottom: 40px;
+        cursor: pointer;
+        transition: all .8s ease;
+    }
+
+    .port-pic img {
+        max-width: 100%;
+    }
+
+    .left {
+        float: none;
+    }
+
+    .right {
+        float: none;
+    }
+
+
+}
+@media screen and (max-width: 640px) {
+    header section {
+        width: 100%;
+    }
+
+    #header-title {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+
+    .nav-btn {
+        width: 33.33%;
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    
+    .nav-btn a {
+        color: #999999;
+        text-decoration: none;
+    }
+
+    #portButton a {
+        border: none;
+    }
+
+    #lower {
+        width: 100%;
+        flex: none;
+    }
+
+    #main {
+        width: calc(100% - 120px);
+        padding: 40px 30px 40px 30px;
+        margin: 0px 0px 50px 30px;
+        background-color: white;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777777;
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+    
+    #profilePic {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .port-pic {
+        position: relative;
+        margin-bottom: 40px;
+        cursor: pointer;
+        transition: all .8s ease;
+    }
+
+    .port-pic img {
+        max-width: 100%;
+    }
+    
+    .left {
+        float: none;
+    }
+    
+    .right {
+        float: none;
+    }
+
+}
